@@ -54,9 +54,15 @@
     </style>
 </head>
 <body>
+    <audio id="bgMusic" loop>
+        <source src="LOVE.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
     <div class="envelope">
         <h1>Happy Valentine's Day! 💖</h1>
         <p>Feiigh, Always Love You 😘</p>
+        <button onclick="toggleMusic()">Play/Pause Music</button>
     </div>
 
     <script>
@@ -74,6 +80,15 @@
         }
 
         setInterval(createHeart, 500);
+
+        function toggleMusic() {
+            const music = document.getElementById("bgMusic");
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        }
     </script>
 </body>
 </html>
