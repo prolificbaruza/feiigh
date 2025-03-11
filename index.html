@@ -41,6 +41,14 @@
             margin-bottom: 20px;
         }
 
+        .tiny-message {
+            color: #e91e63;
+            font-size: 16px;
+            font-style: italic;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
         button {
             background-color: #e91e63;
             color: white;
@@ -50,6 +58,7 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            margin-top: 20px;
         }
 
         button:hover {
@@ -71,13 +80,19 @@
 </head>
 <body>
     <audio id="bgMusic" loop>
-        <source src="audiofile.mp3" type="audio/mp3">
+        <source src="path/to/your/audiofile.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
 
     <div class="envelope">
         <h1>Happy Valentine's Day! 💖</h1>
         <p>Feiigh, Always Love You 😘</p>
+        <div class="tiny-message">
+            Roses = Red <br>
+            Violets = Debatable <br>
+            I <span style="color: #e91e63;">❤️</span> Uu <br>
+            It's not debatable.
+        </div>
         <button onclick="toggleMusic()">Play/Pause Music</button>
     </div>
 
